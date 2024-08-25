@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:columnCount="10"
+    android:rowCount="15"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbarTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/violet"
+        app:titleTextColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:hint="@string/editTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/textViewHint"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <GridLayout
+        android:id="@+id/moodsGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20dp"
+        android:columnCount="6"
+        android:orientation="vertical"
+        android:rowCount="10">
+
+        <Button
+            android:id="@+id/oneBT"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/twoBT"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/threeBT"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/divisionBT"
+            android:layout_gravity="fill"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:text="@string/divided" />
+
+        <Button
+            android:id="@+id/fourBT"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/fiveBT"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/sixBT"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/multipleBT"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:text="@string/multiple" />
+        <Button
+            android:id="@+id/sevenBT"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:text="@string/_7" />
+        <Button
+            android:id="@+id/eightBT"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:text="@string/_8" />
+        <Button
+            android:id="@+id/nineBT"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:text="@string/_9" />
+        <Button
+            android:id="@+id/plusBT"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:layout_rowSpan="2"
+            android:layout_height="100dp"
+            android:text="@string/plus" />
+        <Button
+            android:id="@+id/zeroBT"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:text="@string/_0" />
+        <Button
+            android:id="@+id/equalsBT"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_width="180dp"
+            android:text="@string/equals" />
+        <Button
+            android:id="@+id/minusBT"
+            android:layout_row="7"
+            android:layout_column="3"
+            android:text="@string/minus" />
+        <Button
+            android:id="@+id/resetBT"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_width="360dp"
+            android:text="@string/reset"
+            />
+
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>
